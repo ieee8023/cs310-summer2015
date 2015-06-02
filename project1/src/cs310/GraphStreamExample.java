@@ -55,6 +55,7 @@ public class GraphStreamExample {
     		if (n.getEdgeBetween("b") == null){
     			Edge e = graphStream.addEdge("b-" + n.getId(), "b", n.getId());
     			e.setAttribute("weight", 3);
+    			e.setAttribute("ui.style", "fill-color: red;");
     		}
     	}
     	
